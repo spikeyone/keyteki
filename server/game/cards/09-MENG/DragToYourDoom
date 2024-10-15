@@ -1,0 +1,18 @@
+const Card = require('../../Card');
+
+class DragToYourDoom extends Card {
+    //"Play: Put an enemy flank creature on the bottom of its owner’s deck.\n",
+    setupCardAbilities(ability){
+        this.play({
+            target: {
+                controller: 'opponent',
+                cardType: 'creature',
+                cardCondition: (card) => card.isOnFlank(),
+                gameAction: ability.actions.returnToDeck({ bottom: true })
+            }
+        })
+    }
+}
+
+DragToYourDoom.id = 'drag-to-you-doom';
+module.exports = DragToYourDoom;
