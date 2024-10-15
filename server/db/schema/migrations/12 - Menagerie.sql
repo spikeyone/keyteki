@@ -1,0 +1,2 @@
+INSERT INTO public."Expansions" ("Id", "ExpansionId", "Code", "Name") VALUES (13, 722, 'MENG', 'Menagerie 2023');
+INSERT INTO public."Houses" ("Id", "Code", "Name") VALUES (11, 'keyraken', 'Keyraken');

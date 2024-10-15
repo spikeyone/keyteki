@@ -19,7 +19,8 @@ const defaultFiller = {
     untamed: 'ancient-bear',
     staralliance: 'explo-rover',
     saurian: 'tricerian-legionary',
-    skyborn: 'prop-dusting'
+    skyborn: 'prop-dusting',
+    keyraken: 'swift-current'
 };
 const minDeck = 15;
 const fillerHouses = ['untamed', 'sanctum', 'shadows'];

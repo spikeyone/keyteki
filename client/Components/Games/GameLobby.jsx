@@ -28,7 +28,8 @@ const GameLobby = ({ gameId }) => {
         { name: 'reversal', label: t('Reversal') },
         { name: 'adaptive-bo1', label: t('Adaptive (Bo1)') },
         { name: 'alliance', label: t('Alliance') },
-        { name: 'unchained', label: t('Unchained') }
+        { name: 'unchained', label: t('Unchained') },
+        { name: 'menagerie', lable: t('Menagerie') }
     ];
     const filterDefaults = {};
 

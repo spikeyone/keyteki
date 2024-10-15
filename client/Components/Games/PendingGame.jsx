@@ -115,6 +115,12 @@ const PendingGame = () => {
         expansions = Constants.Expansions.filter((e) => e.value !== '601');
     }
 
+    if (currentGame.gameFormat === 'menagerie') {
+        expansions = Constants.Expansions.filter((e) => e.value === '722');
+    } else {
+        expansions = Constants.Expansions.filter((e) => e.value !== '722');
+    }
+
     deckFilter.expansion = expansions;
 
     const canClickStart = () => {

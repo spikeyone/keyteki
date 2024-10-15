@@ -19,7 +19,7 @@ import ReversalIcon from '../../assets/img/reversal.png';
 import AdaptiveIcon from '../../assets/img/adaptive.png';
 import AllianceIcon from '../../assets/img/alliance.png';
 import UnchainedIcon from '../../assets/img/601.png';
-
+import MenagerieIcon from '../../assets/img/722.png';
 import './GameList.scss';
 
 class GameList extends React.Component {
@@ -269,6 +269,16 @@ class GameList extends React.Component {
                                         title={t('Unchained game format')}
                                     />
                                 )}
+                                ,
+                                {game.gameFormat === 'menagerie' && (
+                                    <img
+                                        src={MenagerieIcon}
+                                        className='game-list-icon'
+                                        alt={t('Menagerie game format')}
+                                        title={t('Menagerie game format')}
+                                    />
+                                )}
+                                ,
                             </span>
                         </div>
                         <div className='game-middle-row'>{players}</div>
